@@ -68,13 +68,13 @@ Python packages are detailed separately in `requirements.txt`.
    ```bash
    # convert tfrecord of glr2021 and products10k to png
    python tfrec2png.py
-   # make csv for glr2021 and products10k
+   # make ./data/preprocess_glr2021_products10k.csv
    python preprocess_glr2021_products10k.py
    
-   # make csv for GPR1200
+   # make ./data/preprocess_GPR1200.csv
    python preprocess_GPR1200.py
    
-   # make csv for food101
+   # make ./data/preprocess_food101.csv
    python preprocess_food101.py
    ```
    
