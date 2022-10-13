@@ -79,14 +79,14 @@ Python packages are detailed separately in `requirements.txt`.
    ```
    
 ## Training
-1. ArcFace model training
+1. ArcFace model training.
 
    ```bash
    # make embedding and train ArcFace model
    python train_arcface.py
    ```
 
-2. Classifier training
+2. Classifier training.
 
    ```bash
    # make embedding of 130k dataset
@@ -96,7 +96,7 @@ Python packages are detailed separately in `requirements.txt`.
    python train_classifier.py emb_dir=./output/classfier_130k/embs output_dir=./output/classfier_130k epoch=100 batch_size=512 mkemb=false
    ```
 
-3. Make torchscript
+3. Make torchscript.
 
    ```bash
    # make ./submissions/yokoi_best_clstta.pt
@@ -105,7 +105,7 @@ Python packages are detailed separately in `requirements.txt`.
 
 ## Prediction
 
-This competition was a code competition. Teams submitted inference notebooks which were ran on hidden test sets. We made the submission notebook on Kaggle at https://www.kaggle.com/code/hirune924/guie-submission-notebook?scriptVersionId=107598594
+This competition was a code competition. Teams submitted inference notebooks which were ran on hidden test sets. We made the submission notebook on Kaggle at https://www.kaggle.com/code/hirune924/guie-submission-notebook?scriptVersionId=107598594.
 
 Made torchscript are linked in that notebook as dataset.
 
