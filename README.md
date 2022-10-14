@@ -63,8 +63,13 @@ Python packages are detailed separately in `requirements.txt`.
    unzip ./130k-images-512x512-universal-image-embeddings.zip -d ./130k
    ```
 
-2. Make csv of image_path and label_id for each dataset.
+2. Make a subset of each dataset. Also make a csv of image_path and label_id for each subset.
 
+   - glr2021: randomly selected 5000 classes
+   - products10k: all data use
+   - GPR1200: delete 200 classes of iNaturalist
+   - food101: randomly removed so that the maximum number of samples for each class was 30
+   
    ```bash
    # convert tfrecord of glr2021 and products10k to png
    python tfrec2png.py
