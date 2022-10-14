@@ -401,7 +401,6 @@ print('torch:', TORCH_VERSION)
 
 #%reload_ext autoreload
 #%autoreload 2
-from src.loss_mixup import x_mixup
 from src.sam import SAM, ASAM
 from src.arcface_models import ArcMarginProduct, DenseCrossEntropy
 from src.knn_faiss import knn_faiss, get_embs, map_per_image, map_per_set
@@ -839,6 +838,17 @@ def timeSince(since, percent):
 
 # In[25]:
 
+
+def x_mixup(x, y, a: float = 1.0, enable: bool = True):
+    a = np.clip(a, 0.0, 1.0)
+    if enable and np.random.rand() >= 0.5:
+        j = torch.randperm(x.size(0))
+        u = x[j]
+        z = y[j]
+        a = np.random.beta(a, a)
+        w = a * x + (1.0 - a) * u
+        return w, y, z, a, True
+    return x, y, y, 1.0, False
 
 def forward_step(step, losses, batch_size, model, criterion, images, labels, loss_mixup_a, optimizer, scaler, optimizer_step):
     """
