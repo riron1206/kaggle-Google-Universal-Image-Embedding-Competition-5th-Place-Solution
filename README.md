@@ -95,17 +95,30 @@ Python packages are detailed separately in `requirements.txt`.
 
    ```bash
    # make embedding of 130k dataset
-   python train_classifier.py emb_dir=./output/classfier_130k/embs output_dir=./output/classfier_130k epoch=100 batch_size=512 mkemb=true
+   python train_classifier.py \
+       emb_dir=./output/classfier_130k/embs \
+       output_dir=./output/classfier_130k \
+       epoch=100 \
+       batch_size=512 \
+       mkemb=true
    
    # train classifier
-   python train_classifier.py emb_dir=./output/classfier_130k/embs output_dir=./output/classfier_130k epoch=100 batch_size=512 mkemb=false
+   python train_classifier.py \
+       emb_dir=./output/classfier_130k/embs \
+       output_dir=./output/classfier_130k \
+       epoch=100 \
+       batch_size=512 \
+       mkemb=false
    ```
 
 3. Make torchscript.
 
    ```bash
    # make ./submissions/yokoi_best_clstta.pt
-   python make_torchscript_wcls.py ckpt_path=./models/kqi_3090_ex072_ep650_bestlb.pth ckpt_cls_path=./models/cls-last.ckpt pt_path=./submissions/yokoi_best_clstta.pt
+   python make_torchscript_wcls.py \
+       ckpt_path=./models/kqi_3090_ex072_ep650_bestlb.pth \
+       ckpt_cls_path=./models/cls-last.ckpt \
+       pt_path=./submissions/yokoi_best_clstta.pt
    ```
 
 ## Prediction
