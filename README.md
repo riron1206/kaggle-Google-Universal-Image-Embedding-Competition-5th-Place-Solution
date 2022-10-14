@@ -105,7 +105,7 @@ Python packages are detailed separately in `requirements.txt`.
 
    ```bash
    # make ./submissions/yokoi_best_clstta.pt
-   python make_torchscript_wcls.py ckpt_path=./models/kqi_3090_ex072_multiinput_emb_arcface_sam_gpGf_ViT-H_fold0_seed0_ep650_bestlb.pth ckpt_cls_path=./models/cls-last.ckpt pt_path=./submissions/yokoi_best_clstta.pt
+   python make_torchscript_wcls.py ckpt_path=./models/kqi_3090_ex072_ep650_bestlb.pth ckpt_cls_path=./models/cls-last.ckpt pt_path=./submissions/yokoi_best_clstta.pt
    ```
 
 ## Prediction
