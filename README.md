@@ -9,10 +9,9 @@ solution summary: https://www.kaggle.com/competitions/google-universal-image-emb
 ## Hardware
 
 - Ubuntu 18.04.6 LTS
-
 - Intel(R) Xeon(R) CPU E5-2698 v4 @ 2.20GHz / AMD Ryzen 9 5900X 12-Core Processor
-
 - NVIDIA Teslas V100 32G / NVIDIA GeForce RTX 3090
+- Memory 80GB
 
 
 ## Software
