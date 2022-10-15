@@ -91,7 +91,7 @@ Python packages are detailed separately in `requirements.txt`.
    python train_arcface.py
    ```
 
-2. Classifier training.
+2. Classifier training for TTA.
 
    ```bash
    # make embedding of 130k dataset
