@@ -2,7 +2,7 @@
 
 competition: https://www.kaggle.com/competitions/google-universal-image-embedding/
 
-paper: https://arxiv.org/abs/
+arxiv paper: papers will be published soon.
 
 solution summary: https://www.kaggle.com/competitions/google-universal-image-embedding/discussion/359161
 
